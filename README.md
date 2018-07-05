@@ -23,10 +23,10 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
  这是由于你新创建的那个仓库里面的README文件不在本地仓库目录中，这时我们可以通过以下命令先将内容合并以下：
- 　``` $ git pull --rebase origin master ```
+  　``` $ git pull --rebase origin master ```
 
 　　再输入
-  ``` $ git push origin master。 ```
+   ``` $ git push origin master。 ```
 
 　　等远程仓库里面有了内容之后，下次再从本地库上传内容的时候只需下面这样就可以了：
 
