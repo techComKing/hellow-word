@@ -7,3 +7,15 @@
  *git commit -m "first commit" //把文件提交到仓库
  *git remote add origin git@github.com:wangjiax9/practice.git //关联远程仓库
  *git push -u origin master //把本地库的所有内容推送到远程库上
+ 
+ 
+ 
+ 如果新建远程仓库不是空的，例如你勾选了 Initialize this repository with a README。那么你通过命令 $ git push -u origin master是会报错的
+ 这是由于你新创建的那个仓库里面的README文件不在本地仓库目录中，这时我们可以通过以下命令先将内容合并以下：
+ 　　$ git pull --rebase origin master
+
+　　再输入$ git push origin master。
+
+　　等远程仓库里面有了内容之后，下次再从本地库上传内容的时候只需下面这样就可以了：
+
+　　$ git push origin master。
