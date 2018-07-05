@@ -5,7 +5,7 @@
  * git add README.md //文件添加到仓库
  * git add . //不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
  * git commit -m "first commit" //把文件提交到仓库
- * git remote add origin git@github.com:wangjiax9/practice.git //关联远程仓库
+ * git remote add origin git@github.com:techComKing/sparkLearning.git //关联远程仓库
  * git push -u origin master //把本地库的所有内容推送到远程库上
  
  
@@ -23,7 +23,7 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
  这是由于你新创建的那个仓库里面的README文件不在本地仓库目录中，这时我们可以通过以下命令先将内容合并以下：
-  　``` $ git pull --rebase origin master ```
+   ``` $ git pull --rebase origin master ```
 
 　　再输入
    ``` $ git push origin master。 ```
