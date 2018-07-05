@@ -10,7 +10,18 @@
  
  
  
- 如果新建远程仓库不是空的，例如你勾选了 Initialize this repository with a README。那么你通过命令 $ git push -u origin master是会报错的
+ >>>如果新建远程仓库不是空的，例如你勾选了 Initialize this repository with a README。那么你通过命令 $ git push -u origin master是会报错的
+ ----------------------------------------------------------------
+ $ git push -u origin master
+To https://github.com/techComKing/sparkLearning.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/techComKing/sparkLearning.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+-------------------------------------------------------------
  这是由于你新创建的那个仓库里面的README文件不在本地仓库目录中，这时我们可以通过以下命令先将内容合并以下：
  　　$ git pull --rebase origin master
 
